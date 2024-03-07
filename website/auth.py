@@ -29,6 +29,6 @@ def sign_up():
             flash('Passwords must be at least 7 characters.', category='error')
         else:
             flash('Account created successfully!', category='success')
-            pass
+
 
     return render_template("sign_up.html")
