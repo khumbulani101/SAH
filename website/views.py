@@ -35,3 +35,7 @@ def delete_note():
             db.session.commit()
 
     return jsonify({})
+
+@views.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
