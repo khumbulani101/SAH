@@ -39,3 +39,7 @@ def delete_note():
 @views.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+@views.route('/signin_up')
+def signin_up():
+    return render_template('sign_in_up.html')
