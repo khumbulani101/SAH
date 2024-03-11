@@ -35,15 +35,3 @@ def delete_note():
             db.session.commit()
 
     return jsonify({})
-
-@views.route('/dashboard')
-def dashboard():
-    return render_template('dashboard.html')
-
-@views.route('/signin_up')
-def signin_up():
-    return render_template('sign_in_up.html')
-
-@views.route('/form')
-def form():
-    return render_template('form.html')
